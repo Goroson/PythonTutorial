@@ -4,8 +4,9 @@ class FilerReader():
 
     def read(self):
         try:
-            with open(self.path, 'r') as f:
-                return f.read()
-
+            f = open(self.path, 'r')
         except IOError:
+            print('error occured')
             return ''
+        else:
+            return f.read()
