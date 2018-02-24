@@ -1,4 +1,4 @@
-class FilerReader():
+class FileReader():
     def __init__(self, path):
         self.path = path
 
